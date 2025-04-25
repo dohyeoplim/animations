@@ -3,6 +3,9 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "motion/react";
 import Preloader from "@/components/Preloader";
+import TextMaskRevealOnScroll from "@/components/TextMaskRevealOnScroll";
+import ColoredStripCards from "@/components/ColoredStripCards";
+import Section from "@/components/Section";
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
@@ -17,15 +20,24 @@ export default function Home() {
     }, []);
 
     return (
-        <main>
+        <div>
             <AnimatePresence mode="wait">
                 {isLoading && <Preloader />}
             </AnimatePresence>
-            <div className="w-full flex flex-col items-center justify-center p-12">
-                <h1 className="text-4xl font-light">dohyeoplim/animation</h1>
-            </div>
 
-            <div className="h-screen"></div>
-        </main>
+            <main className="mx-auto px-8 flex flex-col items-center justify-center gap-30 overflow-hidden">
+                <Section title="Colored Strip Cards">
+                    <ColoredStripCards />
+                </Section>
+
+                <Section title="Text Mask Reveal on Scroll">
+                    <div className="flex flex-col items-start gap-10">
+                        <TextMaskRevealOnScroll />
+                        <TextMaskRevealOnScroll />
+                        <TextMaskRevealOnScroll />
+                    </div>
+                </Section>
+            </main>
+        </div>
     );
 }
