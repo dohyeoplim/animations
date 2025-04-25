@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
+
+const openSans = Open_Sans({
+    subsets: ["latin"],
+    variable: "--font-open-sans",
+});
 
 export const metadata: Metadata = {
     title: "dohyeoplim/animation",
@@ -13,7 +19,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ko">
-            <body>{children}</body>
+            <body className={`${openSans.className} scroll-smooth`}>
+                {children}
+            </body>
         </html>
     );
 }
