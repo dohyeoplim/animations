@@ -25,8 +25,7 @@ export default function ColoredStripCards() {
     };
 
     const manageMouseLeave = (
-        e: React.MouseEvent<HTMLDivElement, MouseEvent>,
-        _index: number
+        e: React.MouseEvent<HTMLDivElement, MouseEvent>
     ) => {
         gsap.to(e.target, {
             top: "0",
@@ -43,7 +42,7 @@ export default function ColoredStripCards() {
                     key={index}
                     className="relative border-t-[1px] border-t-black border-solid mb-[-2vw] bg-white cursor-pointer"
                     onMouseEnter={(e) => manageMouseEnter(e, index)}
-                    onMouseLeave={(e) => manageMouseLeave(e, index)}
+                    onMouseLeave={(e) => manageMouseLeave(e)}
                 >
                     <p className="m-0 p-0 text-[5vw] pl-2.5 uppercase pointer-events-none">
                         {item.title}
