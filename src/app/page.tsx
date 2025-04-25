@@ -6,6 +6,7 @@ import Preloader from "@/components/Preloader";
 import TextMaskRevealOnScroll from "@/components/TextMaskRevealOnScroll";
 import ColoredStripCards from "@/components/ColoredStripCards";
 import Section from "@/components/Section";
+import TextAlongFooter from "@/components/TextAlongFooter";
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +39,8 @@ export default function Home() {
                     </div>
                 </Section>
             </main>
+
+            <TextAlongFooter />
         </div>
     );
 }
