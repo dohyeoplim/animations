@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { ReactLenis } from "lenis/react";
 import { AnimatePresence } from "motion/react";
 import Preloader from "@/components/Preloader";
 import TextMaskRevealOnScroll from "@/components/TextMaskRevealOnScroll";
@@ -22,7 +23,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div>
+        <ReactLenis root options={{ lerp: 0.05 }}>
             <AnimatePresence mode="wait">
                 {isLoading && <Preloader />}
             </AnimatePresence>
@@ -73,6 +74,6 @@ export default function Home() {
             </main>
 
             <TextAlongFooter />
-        </div>
+        </ReactLenis>
     );
 }
