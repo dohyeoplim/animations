@@ -79,7 +79,7 @@ export default function HoverCard({
         <motion.div
             ref={cardRef}
             className={cn(
-                "relative group w-full aspect-[3/3] rounded-xl overflow-hidden shadow-xl border border-neutral-200 bg-cover bg-center cursor-pointer",
+                "relative group w-full aspect-[3/3] md:rounded-lg rounded-md overflow-hidden shadow-xl border border-neutral-200 bg-cover bg-center cursor-pointer",
                 "transition-colors duration-500"
             )}
             style={{
