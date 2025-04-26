@@ -12,6 +12,7 @@ import HoverCard from "@/components/HoverCard";
 import TextInertia from "@/components/TextInertia";
 import HoverCard2 from "@/components/HoverCard2";
 import GridCards from "@/components/GridCards1";
+import CountUp from "@/components/CountUp";
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
@@ -42,6 +43,10 @@ export default function Home() {
                         <TextMaskRevealOnScroll />
                         <TextMaskRevealOnScroll />
                     </div>
+                </Section>
+
+                <Section title="Count Up">
+                    <CountUp />
                 </Section>
 
                 <Section title="Scroll Text Inertia" noPadding>
