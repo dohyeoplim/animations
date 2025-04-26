@@ -9,6 +9,7 @@ import ColoredStripCards from "@/components/ColoredStripCards";
 import Section from "@/components/Section";
 import TextAlongFooter from "@/components/TextAlongFooter";
 import HoverCard from "@/components/HoverCard";
+import TextInertia from "@/components/TextInertia";
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
@@ -28,7 +29,7 @@ export default function Home() {
                 {isLoading && <Preloader />}
             </AnimatePresence>
 
-            <main className="mx-auto px-8 flex flex-col items-center justify-center gap-30 overflow-hidden">
+            <main className="mx-auto px-8 flex flex-col items-center justify-center gap-30">
                 <Section title="Colored Strip Cards">
                     <ColoredStripCards />
                 </Section>
@@ -39,6 +40,10 @@ export default function Home() {
                         <TextMaskRevealOnScroll />
                         <TextMaskRevealOnScroll />
                     </div>
+                </Section>
+
+                <Section title="Scroll Text Inertia" noPadding>
+                    <TextInertia />
                 </Section>
 
                 <Section title="Hovering Cards">

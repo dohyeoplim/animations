@@ -1,11 +1,20 @@
+import { cn } from "@/lib/utils";
+
 interface SectionProps {
     title: string;
     children: React.ReactNode;
+    noPadding?: boolean;
+    className?: string;
 }
 
-export default function Section({ title, children }: SectionProps) {
+export default function Section({
+    title,
+    children,
+    noPadding,
+    className,
+}: SectionProps) {
     return (
-        <section className="w-full py-20">
+        <section className={cn("w-full", noPadding ? "" : "py-20", className)}>
             <div className="mb-12">
                 <h2 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight text-gray-900">
                     {title}
