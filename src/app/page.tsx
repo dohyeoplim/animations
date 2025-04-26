@@ -7,6 +7,7 @@ import TextMaskRevealOnScroll from "@/components/TextMaskRevealOnScroll";
 import ColoredStripCards from "@/components/ColoredStripCards";
 import Section from "@/components/Section";
 import TextAlongFooter from "@/components/TextAlongFooter";
+import HoverCard from "@/components/HoverCard";
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +37,37 @@ export default function Home() {
                         <TextMaskRevealOnScroll />
                         <TextMaskRevealOnScroll />
                         <TextMaskRevealOnScroll />
+                    </div>
+                </Section>
+
+                <Section title="Hovering Cards">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        {/* Card 1 */}
+                        <div className="col-span-2 md:col-span-1">
+                            <HoverCard
+                                title="Card 1"
+                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                backgroundImage="https://images.unsplash.com/photo-1743565610781-9a03109f126a?q=80&w=3735&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            />
+                        </div>
+
+                        {/* Card 2 */}
+                        <div>
+                            <HoverCard
+                                title="Card 2"
+                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                backgroundImage="https://images.unsplash.com/photo-1745425814434-28f5437b4dcf?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            />
+                        </div>
+
+                        {/* Card 3 */}
+                        <div>
+                            <HoverCard
+                                title="Card 3"
+                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                backgroundImage="https://images.unsplash.com/photo-1744044041394-acefd590a9e9?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            />
+                        </div>
                     </div>
                 </Section>
             </main>
