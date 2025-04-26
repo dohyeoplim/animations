@@ -19,9 +19,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ko">
-            <body className={`${openSans.className} scroll-smooth`}>
-                {children}
-            </body>
+            <body className={openSans.className}>{children}</body>
         </html>
     );
 }
