@@ -27,7 +27,7 @@ export default function HoverCard2({
                     backgroundPosition: "center",
                 }}
             />
-            <div className="p-4 relative z-20 h-full text-slate-300 group-hover:text-white transition-colors duration-500 flex flex-col justify-between">
+            <div className="p-4 relative z-20 h-full text-white transition-colors duration-500 flex flex-col justify-between">
                 <div>
                     {title.split("").map((l, i) => (
                         <ShiftLetter letter={l} key={i} />
