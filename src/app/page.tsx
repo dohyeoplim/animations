@@ -11,6 +11,7 @@ import TextAlongFooter from "@/components/TextAlongFooter";
 import HoverCard from "@/components/HoverCard";
 import TextInertia from "@/components/TextInertia";
 import HoverCard2 from "@/components/HoverCard2";
+import GridCards from "@/components/GridCards1";
 
 export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
@@ -84,6 +85,10 @@ export default function Home() {
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                         backgroundImage="https://images.unsplash.com/photo-1745404996796-a8d829f46dcc?q=80&w=2594&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     />
+                </Section>
+
+                <Section title="Grid Cards 1">
+                    <GridCards />
                 </Section>
             </main>
 
