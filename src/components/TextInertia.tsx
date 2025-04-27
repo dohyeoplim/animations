@@ -28,7 +28,7 @@ export default function TextInertia() {
             <div className="sticky top-0 h-screen flex items-center overflow-hidden">
                 <motion.p
                     style={{ skewX, x }}
-                    className="min-w-full origin-bottom-left whitespace-nowrap text-7xl font-black uppercase leading-[0.85] md:text-9xl"
+                    className="min-w-full origin-bottom-left whitespace-nowrap text-7xl text-white font-black uppercase leading-[0.85] md:text-9xl"
                 >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </motion.p>
