@@ -75,17 +75,19 @@ export default function Home() {
 
                     <Section title="Hovering Cards" darkMode>
                         <TracingBeam>
-                            <div className="flex flex-col items-center justify-center gap-8">
-                                <HoverCard
-                                    title="Card 1"
-                                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                                    backgroundImage="https://images.unsplash.com/photo-1743565610781-9a03109f126a?q=80&w=3735&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                />
-                                <HoverCard
-                                    title="Card 2"
-                                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                                    backgroundImage="https://images.unsplash.com/photo-1744044041394-acefd590a9e9?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                />
+                            <div className="w-full flex items-center justify-center">
+                                <div className="w-3/4 flex flex-col items-center justify-center gap-8">
+                                    <HoverCard
+                                        title="Card 1"
+                                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                        backgroundImage="https://images.unsplash.com/photo-1743565610781-9a03109f126a?q=80&w=3735&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    />
+                                    <HoverCard
+                                        title="Card 2"
+                                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                        backgroundImage="https://images.unsplash.com/photo-1744044041394-acefd590a9e9?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    />
+                                </div>
                             </div>
                         </TracingBeam>
                     </Section>
