@@ -5,7 +5,7 @@ import TracingBeam from "./TracingBeam";
 export default function TracingCards() {
     return (
         <>
-            <TracingBeam position="right">
+            <TracingBeam>
                 <div className="w-2xl mx-auto text-white">
                     {testContent.map((item, index) => (
                         <div key={index} className="mb-10">
@@ -30,7 +30,7 @@ export default function TracingCards() {
                 </div>
             </TracingBeam>
 
-            <TracingBeam position="left">
+            <TracingBeam position="right" bendPoint={0.2}>
                 <div className="w-2xl mx-auto text-white">
                     {testContent.map((item, index) => (
                         <div key={index} className="mb-10">

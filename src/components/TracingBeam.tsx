@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 type TracingBeamProps = {
     position?: "left" | "right";
     offset?: number;
+    bendPoint?: number;
     children: React.ReactNode;
     className?: string;
 };
@@ -14,6 +15,7 @@ type TracingBeamProps = {
 export default function TracingBeam({
     position = "left",
     offset = 16,
+    bendPoint = 0.8,
     children,
     className,
 }: TracingBeamProps) {
@@ -49,7 +51,7 @@ export default function TracingBeam({
     );
 
     const basePath = `M1 0 V -36 l 18 24 V ${
-        svgHeight * 0.8
+        svgHeight * bendPoint
     } l -18 24 V ${svgHeight}`;
 
     const beamStyle: React.CSSProperties = {

@@ -74,9 +74,9 @@ export default function Home() {
                     <TracingCards />
 
                     <Section title="Hovering Cards" darkMode>
-                        <TracingBeam>
+                        <TracingBeam bendPoint={0.5} offset={64}>
                             <div className="w-full flex items-center justify-center">
-                                <div className="w-3/4 flex flex-col items-center justify-center gap-8">
+                                <div className="w-full flex flex-col items-center justify-center gap-8">
                                     <HoverCard
                                         title="Card 1"
                                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
